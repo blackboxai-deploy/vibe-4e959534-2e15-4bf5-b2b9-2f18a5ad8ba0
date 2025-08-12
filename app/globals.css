@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #0b1020;
+  color: #e5e7eb;
+}
+.container {
+  max-width: 680px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+.title { font-size: 32px; margin: 0 0 16px; }
+.card {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+}
+.row {
+  display: flex;
+  gap: 8px;
+}
+.input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  background: #0b1020;
+  color: #e5e7eb;
+}
+.button {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+.button.primary { background: #2563eb; border-color: #2563eb; }
+.button:disabled { opacity: 0.6; cursor: not-allowed; }
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.filters { display: flex; gap: 6px; }
+.filterBtn {
+  padding: 6px 10px;
+  border-radius: 9999px;
+  border: 1px solid #374151;
+  background: transparent;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+.filterBtn.active { background: #1f2937; color: white; border-color: #475569; }
+.list { list-style: none; padding: 0; margin: 12px 0 0; }
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #111827;
+}
+.item:last-child { border-bottom: none; }
+.checkbox { width: 18px; height: 18px; }
+.text { flex: 1; }
+.text.completed { text-decoration: line-through; color: #9ca3af; }
+.iconBtn {
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+.iconBtn:hover { background: #111827; color: #e5e7eb; }
+.footer { margin-top: 24px; color: #94a3b8; font-size: 14px; text-align: center; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
